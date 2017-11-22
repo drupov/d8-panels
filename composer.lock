@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "880f420d9955b77b8e79609894c1566b",
+    "content-hash": "b45ea70633bf35eede86926d5266293f",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -1113,7 +1113,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.21",
-                    "datestamp": "1511190785",
+                    "datestamp": "1511191054",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -2426,6 +2426,9 @@
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
                     }
+                },
+                "patches_applied": {
+                    "Implement style plugin": "https://www.drupal.org/files/issues/panels-implement_style_plugin-2296437-58.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
