@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "b45ea70633bf35eede86926d5266293f",
+    "content-hash": "aa8033b2d64db3e64d1dafa08d8a752f",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2479,8 +2479,7 @@
                 "source": "http://git.drupal.org/project/panels.git",
                 "issues": "https://www.drupal.org/project/issues/panels",
                 "irc": "irc://irc.freenode.org/drupal-scotch"
-            },
-            "time": "2017-10-02T23:20:18+00:00"
+            }
         },
         {
             "name": "drupal/panels_everywhere",
