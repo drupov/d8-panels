@@ -85,7 +85,7 @@
         },
         "patches": {
             "drupal/panels": {
-                "Implement style plugin": "https://www.drupal.org/files/issues/panels-implement_style_plugin-2296437-62.patch"
+                "Implement style plugin": "https://www.drupal.org/files/issues/panels-implement_style_plugin-2296437-63.patch"
             }
         }
     }
