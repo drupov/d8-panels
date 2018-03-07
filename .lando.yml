@@ -1,0 +1,4 @@
+name: d8-panels
+recipe: drupal8
+config:
+  webroot: web
