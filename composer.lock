@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "457fbff8021cbc17090097f32e1a2db3",
+    "content-hash": "def9a7dd9bf00f5505fe98936d8116af",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2574,6 +2574,9 @@
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"
                     }
+                },
+                "patches_applied": {
+                    "Update page_manager.variant_route_filter service according to core changes": "https://www.drupal.org/files/issues/2918564-22.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
