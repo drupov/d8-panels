@@ -22,6 +22,7 @@
         "drupal/console": "^1.0.2",
         "drupal/core": "~8.5",
         "drupal/adminimal_admin_toolbar": "~1.0",
+        "drupal/coffee": "~1.0",
         "drupal/config_installer": "~1.0",
         "drupal/config_split": "~1.0",
         "drupal/devel": "~1.0",
