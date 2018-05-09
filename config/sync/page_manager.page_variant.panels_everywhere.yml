@@ -1,0 +1,30 @@
+uuid: 7d7ef0fe-db65-4c95-8632-0defe66652cb
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.site_template
+  module:
+    - panels_everywhere
+_core:
+  default_config_hash: l8f-0pIYYi4abzJ-wOOSBpkWjTZ3AOn7Num6aidOQXM
+id: panels_everywhere
+label: 'Panels Everywhere'
+variant: panels_everywhere_variant
+variant_settings:
+  blocks: {  }
+  id: panels_everywhere_variant
+  label: null
+  weight: 0
+  layout: layout_onecol
+  layout_settings: {  }
+  page_title: ''
+  storage_type: page_manager
+  storage_id: panels_everywhere
+  builder: standard
+  uuid: 6733451a-8ef2-4672-b8e1-93cccd689776
+page: site_template
+weight: 0
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }
