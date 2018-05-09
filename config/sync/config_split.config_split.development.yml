@@ -1,4 +1,4 @@
-uuid: e5505892-565f-4ef1-9725-172b1ee0af95
+uuid: 63145508-6636-4c0e-93db-e12e5f668d04
 langcode: en
 status: true
 dependencies: {  }
@@ -8,8 +8,8 @@ folder: ../config/dev
 module:
   devel: 0
   devel_generate: 0
-  filter_perms: 0
   fpa: 0
+  kint: 0
   module_filter: 0
   webprofiler: 0
 theme: {  }

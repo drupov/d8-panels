@@ -1,8 +1,10 @@
 module:
   admin_toolbar: 0
+  admin_toolbar_links_access_filter: 0
   admin_toolbar_tools: 0
   adminimal_admin_toolbar: 0
   automated_cron: 0
+  big_pipe: 0
   block: 0
   block_content: 0
   breakpoint: 0
@@ -19,24 +21,31 @@ module:
   ctools_block: 0
   datetime: 0
   dblog: 0
+  devel: 0
+  devel_generate: 0
   dynamic_page_cache: 0
   editor: 0
   field: 0
   field_ui: 0
   file: 0
   filter: 0
+  filter_perms: 0
+  fpa: 0
   help: 0
   history: 0
   image: 0
+  kint: 0
   layout_discovery: 0
   link: 0
   menu_ui: 0
+  module_filter: 0
   node: 0
   options: 0
   page_cache: 0
   page_manager: 0
   page_manager_ui: 0
   panelizer: 0
+  panelizer_quickedit: 0
   panels: 0
   panels_everywhere: 0
   panels_ipe: 0
@@ -54,6 +63,7 @@ module:
   update: 0
   user: 0
   views_ui: 0
+  webprofiler: 0
   menu_link_content: 1
   views: 10
   standard: 1000
