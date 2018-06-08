@@ -1,0 +1,46 @@
+uuid: 2f8535ab-555c-4fb6-8d3e-38877f582d86
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.test_page
+  content:
+    - 'block_content:basic:96d2ba9e-ff91-4ddf-ba2b-add1bcd08de2'
+  module:
+    - block_content
+    - panels
+id: test_page-panels_variant-0
+label: Panels
+variant: panels_variant
+variant_settings:
+  blocks:
+    ceebc75d-e082-430b-baf8-ae46e5b5bb37:
+      id: 'block_content:96d2ba9e-ff91-4ddf-ba2b-add1bcd08de2'
+      label: 'Test block'
+      provider: block_content
+      label_display: visible
+      status: true
+      info: ''
+      view_mode: full
+      region: content
+      weight: 0
+      uuid: ceebc75d-e082-430b-baf8-ae46e5b5bb37
+      context_mapping: {  }
+      style:
+        plugin: panels_broken
+        configuration: {  }
+  id: panels_variant
+  uuid: 5c2cc7e1-bcc6-4193-831b-24927e4a783b
+  label: null
+  weight: 0
+  layout: layout_onecol
+  layout_settings: {  }
+  page_title: ''
+  storage_type: page_manager
+  storage_id: test_page-panels_variant-0
+  builder: standard
+page: test_page
+weight: 0
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }

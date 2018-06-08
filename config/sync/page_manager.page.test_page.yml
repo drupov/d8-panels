@@ -1,0 +1,17 @@
+uuid: 0779c4d4-e64e-42b0-852d-56d453e99ada
+langcode: en
+status: true
+dependencies:
+  module:
+    - panels_everywhere
+third_party_settings:
+  panels_everywhere:
+    disable_route_override: false
+id: test_page
+label: 'Test page'
+description: ''
+use_admin_theme: false
+path: /test
+access_logic: and
+access_conditions: {  }
+parameters: {  }
