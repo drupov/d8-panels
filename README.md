@@ -8,4 +8,11 @@ Run `lando start` in the root of the repository.
 
 Run `lando composer install` inside the root folder to get files needed for your Drupal installation.
 
-Run `lando drush si config_installer --db-url=mysql://drupal8:drupal8@database/drupal8 --account-pass=admin --yes` inside your `/web` folder.
+Run `lando drush si config_installer --db-url=mysql://drupal8:drupal8@database/drupal8 --account-pass=admin --yes`
+inside your `/web` folder.
+
+## Style plugin
+
+Edit the configuration of the pane in
+/admin/structure/page_manager/manage/test_page/page_variant__test_page-panels_variant-0__content?js=nojs to see the
+style option appearing in the pane configuration.
