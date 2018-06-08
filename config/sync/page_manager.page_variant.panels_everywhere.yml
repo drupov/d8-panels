@@ -1,4 +1,4 @@
-uuid: 14d029ac-2078-4a02-9707-9c556c3f780f
+uuid: 7d7ef0fe-db65-4c95-8632-0defe66652cb
 langcode: en
 status: true
 dependencies:
@@ -7,7 +7,7 @@ dependencies:
   module:
     - panels_everywhere
 _core:
-  default_config_hash: sfUuqsebboRCI64jpEF_5Oc3aN5APMM6NI0ARq3pu9E
+  default_config_hash: l8f-0pIYYi4abzJ-wOOSBpkWjTZ3AOn7Num6aidOQXM
 id: panels_everywhere
 label: 'Panels Everywhere'
 variant: panels_everywhere_variant
@@ -16,13 +16,13 @@ variant_settings:
   id: panels_everywhere_variant
   label: null
   weight: 0
-  layout: onecol
+  layout: layout_onecol
   layout_settings: {  }
   page_title: ''
-  storage_type: ''
-  storage_id: ''
+  storage_type: page_manager
+  storage_id: panels_everywhere
   builder: standard
-  uuid: f4bbbfc1-b52f-4b4f-92fc-c93255e21e35
+  uuid: 6733451a-8ef2-4672-b8e1-93cccd689776
 page: site_template
 weight: 0
 selection_criteria: {  }
