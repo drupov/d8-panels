@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "87e01b9ca9258e47cb3686b9108f5800",
+    "content-hash": "942796aa5908bdcdf1f08d0e91747d81",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2814,7 +2814,7 @@
                     }
                 },
                 "patches_applied": {
-                    "Implement style plugin": "https://www.drupal.org/files/issues/panels-implement_style_plugin-2296437-63.patch"
+                    "Implement style plugin": "https://www.drupal.org/files/issues/2018-06-01/panels-implement_style_plugin-2296437-77.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
