@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\d8panels\Plugin\PanelsStyle;
+namespace Drupal\d8_panels\Plugin\PanelsStyle;
 
 use Drupal\Core\Block\BlockPluginInterface;
 use Drupal\Core\DependencyInjection\DependencySerializationTrait;
