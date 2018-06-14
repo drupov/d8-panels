@@ -19,6 +19,7 @@ module:
   contextual: 0
   ctools: 0
   ctools_block: 0
+  d8_panels: 0
   datetime: 0
   dblog: 0
   dynamic_page_cache: 0
@@ -43,6 +44,7 @@ module:
   panelizer_quickedit: 0
   panels: 0
   panels_everywhere: 0
+  panels_extra_styles: 0
   panels_ipe: 0
   path: 0
   quickedit: 0

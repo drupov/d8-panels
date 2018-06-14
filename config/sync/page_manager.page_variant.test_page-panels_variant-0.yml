@@ -4,31 +4,31 @@ status: true
 dependencies:
   config:
     - page_manager.page.test_page
-  content:
-    - 'block_content:basic:96d2ba9e-ff91-4ddf-ba2b-add1bcd08de2'
   module:
-    - block_content
     - panels
+    - system
 id: test_page-panels_variant-0
 label: Panels
 variant: panels_variant
 variant_settings:
   blocks:
-    ceebc75d-e082-430b-baf8-ae46e5b5bb37:
-      id: 'block_content:96d2ba9e-ff91-4ddf-ba2b-add1bcd08de2'
-      label: 'Test block'
-      provider: block_content
-      label_display: visible
-      status: true
-      info: ''
-      view_mode: full
+    0059ea7c-96de-42a6-975d-0c824877cf56:
+      id: system_powered_by_block
+      label: 'Powered by Drupal'
+      provider: system
+      label_display: '0'
       region: content
       weight: 0
-      uuid: ceebc75d-e082-430b-baf8-ae46e5b5bb37
+      uuid: 0059ea7c-96de-42a6-975d-0c824877cf56
       context_mapping: {  }
       style:
-        plugin: panels_broken
-        configuration: {  }
+        plugin: wrapper_style
+        configuration:
+          pane:
+            content:
+              element: span
+              id: ''
+              class: my-class
   id: panels_variant
   uuid: 5c2cc7e1-bcc6-4193-831b-24927e4a783b
   label: null
