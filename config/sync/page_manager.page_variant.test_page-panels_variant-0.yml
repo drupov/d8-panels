@@ -14,9 +14,9 @@ variant_settings:
   blocks:
     0059ea7c-96de-42a6-975d-0c824877cf56:
       id: system_powered_by_block
-      label: 'Powered by Drupal'
+      label: 'Powered by Drupal title'
       provider: system
-      label_display: '0'
+      label_display: visible
       region: content
       weight: 0
       uuid: 0059ea7c-96de-42a6-975d-0c824877cf56
@@ -25,10 +25,14 @@ variant_settings:
         plugin: wrapper_style
         configuration:
           pane:
-            content:
+            title:
               element: span
-              id: ''
-              class: my-class
+              id: demo-wrapper-title-id
+              class: demo-wrapper-title-class
+            content:
+              element: div
+              id: demo-wrapper-content-id
+              class: 'demo-wrapper-content-class demo-wrapper-content-class-second'
   id: panels_variant
   uuid: 5c2cc7e1-bcc6-4193-831b-24927e4a783b
   label: null
@@ -39,6 +43,15 @@ variant_settings:
   storage_type: page_manager
   storage_id: test_page-panels_variant-0
   builder: standard
+  regions:
+    content:
+      style:
+        plugin: wrapper_style
+        configuration:
+          region:
+            element: div
+            id: demo-wrapper-region-id
+            class: demo-wrapper-region-class
 page: test_page
 weight: 0
 selection_criteria: {  }
