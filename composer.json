@@ -79,6 +79,14 @@
             "web/profiles/contrib/{$name}": ["type:drupal-profile"],
             "web/themes/contrib/{$name}": ["type:drupal-theme"],
             "drush/contrib/{$name}": ["type:drupal-drush"]
+        },
+        "patches": {
+            "drupal/page_manager": {
+                "Allow for block visibility rules": "https://www.drupal.org/files/issues/2018-06-11/page_manager-block_visibility_conditions-2858877-45-D8.patch"
+            },
+            "drupal/panels": {
+                "Block visibility conditions": "https://www.drupal.org/files/issues/2018-06-11/panels-block_visibility_conditions-2769099-32-D8-do-not-test.patch"
+            }
         }
     }
 }

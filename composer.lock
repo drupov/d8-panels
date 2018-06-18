@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9ecc38a422cb84ee6d0d6bde52aa6a80",
+    "content-hash": "9dfc3c2469d71590de5e1e89fc333fb1",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2671,6 +2671,9 @@
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"
                     }
+                },
+                "patches_applied": {
+                    "Allow for block visibility rules": "https://www.drupal.org/files/issues/2018-06-11/page_manager-block_visibility_conditions-2858877-45-D8.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -2816,7 +2819,7 @@
                     }
                 },
                 "patches_applied": {
-                    "Implement style plugin": "https://www.drupal.org/files/issues/2018-06-01/panels-implement_style_plugin-2296437-77.patch"
+                    "Block visibility conditions": "https://www.drupal.org/files/issues/2018-06-11/panels-block_visibility_conditions-2769099-32-D8-do-not-test.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
