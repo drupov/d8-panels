@@ -1,0 +1,16 @@
+<?php
+
+/**
+ * Implements hook_theme().
+ */
+function d8_panels_theme($existing, $type, $theme, $path) {
+  return [
+    'wrapper' => [
+      'variables' => [
+        'attributes' => [],
+        'content' => NULL,
+        'tag' => NULL,
+      ],
+    ],
+  ];
+}
