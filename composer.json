@@ -33,7 +33,6 @@
         "drupal/panelizer": "~4.0",
         "drupal/panels": "~4.0",
         "drupal/panels_everywhere": "4.x-dev",
-        "drupal/panels_extra_styles_d8": "1.x-dev",
         "drupal/toolbar_anti_flicker": "~1.4",
         "drush/drush": "^9.0.0",
         "vlucas/phpdotenv": "^2.4",
