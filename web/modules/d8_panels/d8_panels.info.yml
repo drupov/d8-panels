@@ -1,8 +1,0 @@
-name: Drupal 8 Panels
-type: module
-description: Plugins for testing Panels in Drupal 8
-core: 8.x
-package: Panels
-dependencies:
-  - panels
-- page_manager
