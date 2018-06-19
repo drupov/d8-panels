@@ -1,0 +1,17 @@
+uuid: 04487134-9478-483d-b5c9-927926228e8e
+langcode: en
+status: true
+dependencies:
+  module:
+    - panels_everywhere
+third_party_settings:
+  panels_everywhere:
+    disable_route_override: false
+id: demo_block_visibility
+label: 'Demo block visibility'
+description: ''
+use_admin_theme: false
+path: /demo-block-visibility
+access_logic: and
+access_conditions: {  }
+parameters: {  }

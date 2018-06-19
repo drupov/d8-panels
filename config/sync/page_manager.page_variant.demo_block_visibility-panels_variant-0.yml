@@ -1,0 +1,56 @@
+uuid: ea97c944-8cca-4134-a667-13fe6ee2b4ef
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.demo_block_visibility
+  module:
+    - panels
+    - system
+id: demo_block_visibility-panels_variant-0
+label: Panels
+variant: panels_variant
+variant_settings:
+  blocks:
+    9d3554e9-48cf-42c6-a4d6-b3ddbc99ee5d:
+      id: system_powered_by_block
+      label: 'Visible to all'
+      provider: system
+      label_display: visible
+      region: content
+      weight: 0
+      uuid: 9d3554e9-48cf-42c6-a4d6-b3ddbc99ee5d
+      context_mapping: {  }
+      visibility: {  }
+    7674a0a7-b1e2-47d4-a1a7-f7b757a54037:
+      id: system_powered_by_block
+      label: 'Visible to authenticated'
+      provider: system
+      label_display: visible
+      region: content
+      weight: 0
+      uuid: 7674a0a7-b1e2-47d4-a1a7-f7b757a54037
+      context_mapping: {  }
+      visibility:
+        user_role:
+          id: user_role
+          roles:
+            authenticated: authenticated
+          negate: false
+          context_mapping:
+            user: '@user.current_user_context:current_user'
+  id: panels_variant
+  uuid: d5291700-5054-481c-a042-ee2d070090b9
+  label: null
+  weight: 0
+  layout: layout_onecol
+  layout_settings: {  }
+  page_title: 'Demo block visibility'
+  storage_type: page_manager
+  storage_id: demo_block_visibility-panels_variant-0
+  builder: standard
+page: demo_block_visibility
+weight: 0
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }
