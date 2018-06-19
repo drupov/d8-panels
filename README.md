@@ -14,5 +14,5 @@ inside your `/web` folder.
 ## Style plugin
 
 Edit the configuration of the pane in
-`/admin/structure/page_manager/manage/test_page/page_variant__test_page-panels_variant-0__content?js=nojs` to see the
-style option appearing in the pane configuration.
+`/admin/structure/page_manager/manage/demo_style_plugin/general` to see the style option appearing in the pane
+configuration or see the page at `/demo-style-plugin`.
