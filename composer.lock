@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "eee860bfd1ccc36bc85066924f94cf60",
+    "content-hash": "777e50c9238208694ac5918a14172eee",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2724,7 +2724,8 @@
                     }
                 },
                 "patches_applied": {
-                    "Allow for block visibility rules": "https://www.drupal.org/files/issues/2018-06-11/page_manager-block_visibility_conditions-2858877-45-D8.patch"
+                    "Allow for block visibility rules": "https://www.drupal.org/files/issues/2018-06-11/page_manager-block_visibility_conditions-2858877-45-D8.patch",
+                    "Warning: Missing argument 1 for Drupal...PageVariantContextsForm::getContextClass()": "https://www.drupal.org/files/issues/2018-04-14/2799885-11.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
