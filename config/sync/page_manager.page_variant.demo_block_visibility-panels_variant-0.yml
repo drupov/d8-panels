@@ -24,7 +24,7 @@ variant_settings:
       visibility: {  }
     7674a0a7-b1e2-47d4-a1a7-f7b757a54037:
       id: system_powered_by_block
-      label: 'Visible to authenticated'
+      label: 'Visible in demo condition'
       provider: system
       label_display: visible
       region: content
@@ -32,13 +32,12 @@ variant_settings:
       uuid: 7674a0a7-b1e2-47d4-a1a7-f7b757a54037
       context_mapping: {  }
       visibility:
-        user_role:
-          id: user_role
-          roles:
-            authenticated: authenticated
+        demo_condition:
+          id: demo_condition
+          dummy_value: 1
           negate: false
           context_mapping:
-            user: '@user.current_user_context:current_user'
+            node: '@node.node_route_context:node'
   id: panels_variant
   uuid: d5291700-5054-481c-a042-ee2d070090b9
   label: null
@@ -53,4 +52,9 @@ page: demo_block_visibility
 weight: 0
 selection_criteria: {  }
 selection_logic: and
-static_context: {  }
+static_context:
+  node:
+    label: Node
+    type: 'entity:node'
+    description: ''
+    value: 0031ec11-3c6e-4e82-a33c-db894a714440
