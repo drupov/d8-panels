@@ -26,6 +26,7 @@
         "drupal/console": "^1.0.2",
         "drupal/core": "~8.5.3",
         "drupal/devel": "~1.0",
+        "drupal/entity_field_condition": "~1.0",
         "drupal/filter_perms": "~1.0",
         "drupal/fpa": "~2.0",
         "drupal/module_filter": "~3.0",
