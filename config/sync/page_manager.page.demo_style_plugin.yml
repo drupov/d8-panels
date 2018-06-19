@@ -1,4 +1,4 @@
-uuid: 0779c4d4-e64e-42b0-852d-56d453e99ada
+uuid: 022e27db-734e-457e-a2fd-0129d5987669
 langcode: en
 status: true
 dependencies:
@@ -7,11 +7,11 @@ dependencies:
 third_party_settings:
   panels_everywhere:
     disable_route_override: false
-id: test_page
-label: 'Test page'
+id: demo_style_plugin
+label: 'Demo style plugin'
 description: ''
 use_admin_theme: false
-path: /test
+path: /demo-style-plugin
 access_logic: and
 access_conditions: {  }
 parameters: {  }
