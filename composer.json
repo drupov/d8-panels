@@ -83,7 +83,8 @@
         },
         "patches": {
             "drupal/page_manager": {
-                "Allow for block visibility rules": "https://www.drupal.org/files/issues/2018-06-11/page_manager-block_visibility_conditions-2858877-45-D8.patch"
+                "Allow for block visibility rules": "https://www.drupal.org/files/issues/2018-06-11/page_manager-block_visibility_conditions-2858877-45-D8.patch",
+                "Warning: Missing argument 1 for Drupal...PageVariantContextsForm::getContextClass()": "https://www.drupal.org/files/issues/2018-04-14/2799885-11.patch"
             },
             "drupal/panels": {
                 "Block visibility conditions": "https://www.drupal.org/files/issues/2018-06-11/panels-block_visibility_conditions-2769099-32-D8-do-not-test.patch"
