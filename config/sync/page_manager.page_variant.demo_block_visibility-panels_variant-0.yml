@@ -38,6 +38,21 @@ variant_settings:
           negate: false
           context_mapping:
             node: '@node.node_route_context:node'
+    11c7b4ec-d16b-4a2c-aa62-0300693c7a1d:
+      id: system_powered_by_block
+      label: 'Visible by block visibility group'
+      provider: system
+      label_display: visible
+      region: content
+      weight: 0
+      uuid: 11c7b4ec-d16b-4a2c-aa62-0300693c7a1d
+      context_mapping: {  }
+      visibility:
+        condition_group:
+          id: condition_group
+          negate: false
+          block_visibility_group: demo
+          context_mapping: {  }
   id: panels_variant
   uuid: d5291700-5054-481c-a042-ee2d070090b9
   label: null

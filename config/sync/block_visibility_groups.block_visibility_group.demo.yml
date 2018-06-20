@@ -1,0 +1,17 @@
+uuid: 8385fdc0-fc49-4035-a38f-ee07b89a9a64
+langcode: en
+status: true
+dependencies:
+  module:
+    - d8_panels
+id: demo
+label: Demo
+logic: and
+conditions:
+  6beaa2ad-68e4-4d45-a2c5-2ffe85e4cfc2:
+    id: demo_condition
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    uuid: 6beaa2ad-68e4-4d45-a2c5-2ffe85e4cfc2
+allow_other_conditions: false
