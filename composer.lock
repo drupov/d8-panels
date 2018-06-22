@@ -124,16 +124,16 @@
         },
         {
             "name": "chi-teck/drupal-code-generator",
-            "version": "1.24.0",
+            "version": "1.25.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Chi-teck/drupal-code-generator.git",
-                "reference": "20682ec4acc92e9671ba7b9bd0e972978c3a08f2"
+                "reference": "9d3b25c5e3bb57a081c6c47d1f6d08a1a2c7a7db"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Chi-teck/drupal-code-generator/zipball/20682ec4acc92e9671ba7b9bd0e972978c3a08f2",
-                "reference": "20682ec4acc92e9671ba7b9bd0e972978c3a08f2",
+                "url": "https://api.github.com/repos/Chi-teck/drupal-code-generator/zipball/9d3b25c5e3bb57a081c6c47d1f6d08a1a2c7a7db",
+                "reference": "9d3b25c5e3bb57a081c6c47d1f6d08a1a2c7a7db",
                 "shasum": ""
             },
             "require": {
@@ -159,7 +159,7 @@
                 "GPL-2.0-or-later"
             ],
             "description": "Drupal code generator",
-            "time": "2018-04-25T17:35:50+00:00"
+            "time": "2018-06-20T07:01:01+00:00"
         },
         {
             "name": "composer/installers",
@@ -2814,9 +2814,6 @@
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
                     }
-                },
-                "patches_applied": {
-                    "Implement style plugin": "https://www.drupal.org/files/issues/2018-06-01/panels-implement_style_plugin-2296437-77.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -3048,12 +3045,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/drush-ops/drush.git",
-                "reference": "2342ecfb504261bd60977c03113fe5762491d34a"
+                "reference": "226aa64e93528b3f4c0a1fc49fc6bf594d55614b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drush-ops/drush/zipball/2342ecfb504261bd60977c03113fe5762491d34a",
-                "reference": "2342ecfb504261bd60977c03113fe5762491d34a",
+                "url": "https://api.github.com/repos/drush-ops/drush/zipball/226aa64e93528b3f4c0a1fc49fc6bf594d55614b",
+                "reference": "226aa64e93528b3f4c0a1fc49fc6bf594d55614b",
                 "shasum": ""
             },
             "require": {
@@ -3141,7 +3138,7 @@
             ],
             "description": "Drush is a command line shell and scripting interface for Drupal, a veritable Swiss Army knife designed to make life easier for those of us who spend some of our working hours hacking away at the command prompt.",
             "homepage": "http://www.drush.org",
-            "time": "2018-06-12T19:41:13+00:00"
+            "time": "2018-06-22T11:51:30+00:00"
         },
         {
             "name": "easyrdf/easyrdf",
@@ -6183,16 +6180,16 @@
         },
         {
             "name": "zendframework/zend-feed",
-            "version": "2.10.1",
+            "version": "2.10.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/zendframework/zend-feed.git",
-                "reference": "2815c29a4c4e52bf4033128592ea310b0f4e9379"
+                "reference": "5253f949f4ad999086ab9b408908b6c6776f24db"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zendframework/zend-feed/zipball/2815c29a4c4e52bf4033128592ea310b0f4e9379",
-                "reference": "2815c29a4c4e52bf4033128592ea310b0f4e9379",
+                "url": "https://api.github.com/repos/zendframework/zend-feed/zipball/5253f949f4ad999086ab9b408908b6c6776f24db",
+                "reference": "5253f949f4ad999086ab9b408908b6c6776f24db",
                 "shasum": ""
             },
             "require": {
@@ -6240,7 +6237,7 @@
                 "feed",
                 "zf"
             ],
-            "time": "2018-06-05T13:16:04+00:00"
+            "time": "2018-06-18T20:14:01+00:00"
         },
         {
             "name": "zendframework/zend-stdlib",
