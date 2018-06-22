@@ -18,26 +18,10 @@ variant_settings:
       provider: system
       label_display: visible
       region: content
-      weight: 0
+      weight: 2
       uuid: 9d3554e9-48cf-42c6-a4d6-b3ddbc99ee5d
       context_mapping: {  }
       visibility: {  }
-    7674a0a7-b1e2-47d4-a1a7-f7b757a54037:
-      id: system_powered_by_block
-      label: 'Visible in demo condition'
-      provider: system
-      label_display: visible
-      region: content
-      weight: 0
-      uuid: 7674a0a7-b1e2-47d4-a1a7-f7b757a54037
-      context_mapping: {  }
-      visibility:
-        demo_condition:
-          id: demo_condition
-          dummy_value: 1
-          negate: false
-          context_mapping:
-            node: '@node.node_route_context:node'
     11c7b4ec-d16b-4a2c-aa62-0300693c7a1d:
       id: system_powered_by_block
       label: 'Visible by block visibility group'
@@ -53,6 +37,27 @@ variant_settings:
           negate: false
           block_visibility_group: demo
           context_mapping: {  }
+    b79afc23-fa2d-46f0-8557-91d4f618ba39:
+      id: system_powered_by_block
+      label: 'Visible in demo condition'
+      provider: system
+      label_display: visible
+      region: content
+      weight: 1
+      uuid: b79afc23-fa2d-46f0-8557-91d4f618ba39
+      context_mapping: {  }
+      visibility:
+        condition_group:
+          id: condition_group
+          negate: false
+          block_visibility_group: ''
+          context_mapping: {  }
+        demo_condition:
+          id: demo_condition
+          username_string: phu
+          negate: false
+          context_mapping:
+            user: '@user.current_user_context:current_user'
   id: panels_variant
   uuid: d5291700-5054-481c-a042-ee2d070090b9
   label: null
