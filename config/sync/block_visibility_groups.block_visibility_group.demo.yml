@@ -3,15 +3,17 @@ langcode: en
 status: true
 dependencies:
   module:
-    - d8_panels
+    - user
 id: demo
 label: Demo
 logic: and
 conditions:
-  6beaa2ad-68e4-4d45-a2c5-2ffe85e4cfc2:
-    id: demo_condition
+  56e16725-2c09-4e7f-adb1-f763e36e77b2:
+    id: user_role
+    roles:
+      authenticated: authenticated
     negate: false
     context_mapping:
-      node: '@node.node_route_context:node'
-    uuid: 6beaa2ad-68e4-4d45-a2c5-2ffe85e4cfc2
+      user: '@user.current_user_context:current_user'
+    uuid: 56e16725-2c09-4e7f-adb1-f763e36e77b2
 allow_other_conditions: false
