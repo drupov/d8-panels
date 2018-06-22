@@ -4,7 +4,6 @@ namespace Drupal\d8_panels\Plugin\Condition;
 
 use Drupal\Core\Condition\ConditionPluginBase;
 use Drupal\Core\Form\FormStateInterface;
-use Symfony\Component\DependencyInjection\ContainerInterface;
 
 /**
  * Provides a 'Demo condition' condition.
@@ -13,11 +12,7 @@ use Symfony\Component\DependencyInjection\ContainerInterface;
  *   id = "demo_condition",
  *   label = @Translation("Demo condition"),
  *   context = {
- *     "node" = @ContextDefinition(
- *       "entity:node",
- *       required = TRUE,
- *       label = @Translation("node")
- *     )
+ *     "user" = @ContextDefinition("entity:user", label = @Translation("User"))
  *   }
  * )
  */
@@ -26,50 +21,42 @@ class DemoCondition extends ConditionPluginBase {
   /**
    * {@inheritdoc}
    */
-  public static function create(ContainerInterface $container, array $configuration, $plugin_id, $plugin_definition) {
-    return new static(
-      $configuration,
-      $plugin_id,
-      $plugin_definition
-    );
-  }
-
-  /**
-   * Creates a new ExampleCondition instance.
-   *
-   * @param array $configuration
-   *   The plugin configuration, i.e. an array with configuration values keyed
-   *   by configuration option name. The special key 'context' may be used to
-   *   initialize the defined contexts by setting it to an array of context
-   *   values keyed by context names.
-   * @param string $plugin_id
-   *   The plugin_id for the plugin instance.
-   * @param mixed $plugin_definition
-   *   The plugin implementation definition.
-   */
-  public function __construct(array $configuration, $plugin_id, $plugin_definition) {
-    parent::__construct($configuration, $plugin_id, $plugin_definition);
-  }
-
-  /**
-   * {@inheritdoc}
-   */
   public function buildConfigurationForm(array $form, FormStateInterface $form_state) {
+    $form['username_string'] = [
+      '#type' => 'textfield',
+      '#title' => $this->t('Username contains string'),
+      '#description' => $this->t('Enter a string that should be contained in the username of the active user.'),
+      '#default_value' => $this->configuration['username_string'],
+    ];
     return parent::buildConfigurationForm($form, $form_state);
   }
 
   /**
    * {@inheritdoc}
    */
-  public function submitConfigurationForm(array &$form, FormStateInterface $form_state) {
-    parent::submitConfigurationForm($form, $form_state);
+  public function defaultConfiguration() {
+    return [
+      'username_string' => '',
+    ] + parent::defaultConfiguration();
   }
 
   /**
    * {@inheritdoc}
    */
-  public function defaultConfiguration() {
-    return parent::defaultConfiguration();
+  public function submitConfigurationForm(array &$form, FormStateInterface $form_state) {
+    $this->configuration['username_string'] = $form_state->getValue('username_string');
+    parent::submitConfigurationForm($form, $form_state);
+  }
+
+  /**
+   * Provides a human readable summary of the condition's configuration.
+   */
+  public function summary() {
+    // Entity Type.
+    $username_string = $this->configuration['username_string'];
+    $message = t('Will not be shown, if username contains !username_string', ['!username_string' => $username_string]);
+
+    return $message;
   }
 
   /**
@@ -79,23 +66,13 @@ class DemoCondition extends ConditionPluginBase {
    *   TRUE if the condition has been met, FALSE otherwise.
    */
   public function evaluate() {
-    return TRUE;
-  }
-
-  /**
-   * Provides a human readable summary of the condition's configuration.
-   */
-  public function summary() {
-    // Entity Type.
-    $negate = $this->configuration['negate'];
-    if ($negate) {
-      $message = t('Will not be shown');
-    }
-    else {
-      $message = t('Will be shown');
+    if (empty($this->configuration['username_string']) && !$this->isNegated()) {
+      return TRUE;
     }
 
-    return $message;
+    $user = $this->getContextValue('user');
+
+    return strpos($user->getUsername(), $this->configuration['username_string']) !== FALSE;
   }
 
 }
