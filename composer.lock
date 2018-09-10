@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "176395e5d8ab312fd6b43baab9adb54e",
+    "content-hash": "07b7e8b3379f7f6b26fa512068c674aa",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -3162,6 +3162,9 @@
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
                     }
+                },
+                "patches_applied": {
+                    "Implement style plugin": "https://www.drupal.org/files/issues/2018-06-01/panels-implement_style_plugin-2296437-77.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -8821,6 +8824,8 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "drupal/filter_perms": 20,
+        "drupal/fpa": 20,
         "drupal/panels_everywhere": 20
     },
     "prefer-stable": true,
