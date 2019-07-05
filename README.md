@@ -14,9 +14,5 @@ Run `lando drush si config_installer --db-url=mysql://drupal8:drupal8@database/d
 
 ## Development environment
 
-As this is a development environment, to improve debugging add the following lines 
-directly to `/web/sites/default/settings.php`:
-```
-$settings['container_yamls'][] = DRUPAL_ROOT . '/sites/development.services.yml';
-$settings['cache']['bins']['dynamic_page_cache'] = 'cache.backend.null';
-```
+As this is a development environment, follow the steps here to enable development mode, see "Enable local development
+settings" in https://www.drupal.org/node/2598914
