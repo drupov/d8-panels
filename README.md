@@ -2,14 +2,15 @@
 
 ## Start lando
 
+Copy lando example file: `cp .lando.yml.example .lando.yml`
+
 Run `lando start` in the root of the repository.
 
 ## Installation Instructions
 
-Run `lando composer install` inside the root folder to get files needed for your Drupal installation.
+Run `lando composer install` to get files needed for your Drupal installation.
 
-Run `lando drush si config_installer --db-url=mysql://drupal8:drupal8@database/drupal8 --account-pass=admin --yes`
-inside your `/web` folder.
+Run `lando drush si config_installer --db-url=mysql://drupal8:drupal8@database/drupal8 --account-pass=admin --yes`.
 
 ## Style plugin
 
