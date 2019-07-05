@@ -3561,6 +3561,9 @@
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
                     }
+                },
+                "patches_applied": {
+                    "Implement style plugin": "https://www.drupal.org/files/issues/2018-06-01/panels-implement_style_plugin-2296437-77.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -8797,6 +8800,7 @@
                 "mock",
                 "xunit"
             ],
+            "abandoned": true,
             "time": "2018-08-09T05:50:03+00:00"
         },
         {
